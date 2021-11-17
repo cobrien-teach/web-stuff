@@ -1,21 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <h1>welcome to the world wide web</h1>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+.blinky {
+  animation: blinker 1s linear infinite;
+}
 
-  <h2>welcome to my webpage</h2>
-  <p>this is a webpage. It is inspired by the austere  design of
-  the early web.   </p>
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 
-  <p>how do you feel about the internet?</p>
+.header {
+  text-align: center;
+}
+.footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+}
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+}
+</style>
+</head>
+<header class="header">
 
-  <form method="post" action="/Tests/Post/">
+  <img src="https://media3.giphy.com/media/cp3EXAJY259ctiQP9K/200w.webp?cid=ecf05e47n6613fya3hgguab89td7offbhp3jb4kj1iprsvdc&rid=200w.webp&ct=g" alt="Banner Image"/>
+
+</header>
+<marquee direction = "right">
+  <h1 class="rainbow-text">welcome to the world wide web</h1>
+</marquee>
+  <marquee>
+  <h2 class = "blinky">welcome to my webpage!!   welcome to my webpage!!    welcome to my webpage!! </h2>
+</marquee>
+  <p>this is a webpage.   </p>
+
+  <p>it is inspired by the austere but also quirky  design aesthetic of
+  the early web. </p>
+
+  <form >
       <fieldset>
-          <legend>What is Your Favorite Pet?</legend>
-          <input type="checkbox" name="better_place" value="It has made the wrold a ">Cats<br>
-          <input type="checkbox" name="favorite_pet" value="Dogs">Dogs<br>
-          <input type="checkbox" name="favorite_pet" value="Birds">Birds<br>
+          <legend>how do you like this website??</legend>
+          <input class ="container" type="checkbox" >it's great<br>
+          <input type="checkbox" >it could use some work<br>
+          <input type="checkbox">other   <br>
+          <br>
+          <textarea name="comment" form="usrform">if you have comments please type  here...</textarea><br>
           <br>
           <input type="submit" value="Submit now" />
+
       </fieldset>
   </form>
+
+<footer class = "footer">
+website by Chris O'Brien
+
 </html>
