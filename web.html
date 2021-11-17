@@ -2,6 +2,10 @@
 <html>
 <head>
 <style>
+.fun {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
 body {
   background-color: lightblue;
 }
@@ -26,6 +30,18 @@ body {
 .rainbow-text {
   background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
 }
+
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 </style>
 </head>
 <header class="header">
@@ -42,12 +58,14 @@ body {
   <p>this is a webpage.   </p>
 
   <p>it is inspired by the austere but also quirky  design aesthetic of
-  the early web. </p>
+    <a href = "https://www.mentalfloss.com/article/53792/17-ancient-abandoned-websites-still-work">the early web.</a> </p>
+
+<br>
 
   <form >
       <fieldset>
-          <legend>how do you like this website??</legend>
-          <input class ="container" type="checkbox" >it's great<br>
+          <legend class = "fun">how do you like this website??</legend>
+          <input  type="checkbox" >it's great<br>
           <input type="checkbox" >it could use some work<br>
           <input type="checkbox">other   <br>
           <br>
@@ -58,7 +76,11 @@ body {
       </fieldset>
   </form>
 
+
+
+
 <footer class = "footer">
+  <br>
 website by Chris O'Brien
 
 </html>
